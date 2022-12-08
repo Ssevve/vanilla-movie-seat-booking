@@ -8,7 +8,8 @@
   --clr-accent: rgb(240, 197, 13);
   --clr-taken: rgb(48, 46, 58);
   
-  --clr-checkout: rgb(52, 180, 121);
+  --clr-checkout: rgb(46, 157, 105, 0.9);
+  --clr-checkout-hover: rgba(46, 157, 105, 0.7);
 }
 
 * {
@@ -137,7 +138,24 @@ body {
   background: var(--clr-accent);
 }
 
+.checkout,
+.checkout-btn {
+  width: 100%;
+}
+
 .checkout-btn {
   background: var(--clr-checkout);
   color: inherit;
+  padding: 1rem 2rem;
+  border-radius: 100rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.5rem;
+  transition: background 0.1s ease-in-out;
+}
+
+.checkout-btn:hover {
+  background: var(--clr-checkout-hover);
 }
