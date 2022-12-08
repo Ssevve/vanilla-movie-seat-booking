@@ -1,3 +1,17 @@
+:root {
+  --clr-bg: rgb(19, 18, 23);
+
+  --clr-font: rgb(234, 234, 234);
+
+  --clr-screen: rgb(72, 72, 85);
+
+  --clr-available: rgb(157, 163, 179);
+  --clr-taken: rgb(48, 46, 58);
+  --clr-selected: rgb(240, 197, 13);
+
+  --clr-checkout: rgb(52, 180, 121);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,5 +20,43 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   min-height: 100vh;
+  background: var(--clr-bg);
+  color: var(--clr-font);
+}
+
+.container {
+  width: 80%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.screen {
+  background: var(--clr-screen);
+  height: 0.5rem;
+}
+
+.seat {
+  --size: 2rem;
+  height: var(--size);
+  width: var(--size);
+  background: var(--clr-available);
+
+  --top-border-radius: 0.5rem;
+  border-top-left-radius: var(--top-border-radius);
+  border-top-right-radius: var(--top-border-radius);
+}
+
+.taken {
+  background: var(--clr-taken);
+}
+
+.selected {
+  background: var(--clr-selected);
+}
+
+.checkout-btn {
+  background: var(--clr-checkout);
+  color: inherit;
 }

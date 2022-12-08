@@ -5,11 +5,153 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Seat Booking</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=poppins:400,700" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <h1 class="page-title">Book a ticket</h1>
+    <form class="form">
+      <label class="label">
+        Pick a movie:
+        <select class="select">
+          <option value="">--Select--</option>
+          <option value="spoilerAlert">Spoiler Alert</option>
+          <option value="violentNight">Violent Night</option>
+          <option value="devotion">Devotion</option>
+          <option value="theMenu">The Menu</option>
+        </select>
+      </label>
+    </form>
 
+    <section class="movie-price">
+      <span>Ticket price:</span>
+      <span>10$</span>
+    </div>
+
+    <section class="legend">
+      <div>
+        <div class="seat"></div>
+        <span>Available</span>
+      </div>
+      <div>
+        <div class="seat taken"></div>
+        <span>Taken</span>
+      </div>
+      <div>
+        <div class="seat selected"></div>
+        <span>Selected</span>
+      </div>
+    </section>
+
+    <section class="room">
+      <div class="screen"></div>
+      <div class="seats">
+        <!-- Seat Row A -->
+        <div class="row">
+          <div class="seat-group">
+            <div data-seat="A1"class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="A2" class="seat"></div>
+            <div data-seat="A3" class="seat"></div>
+            <div data-seat="A4" class="seat"></div>
+            <div data-seat="A5" class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="A6" class="seat"></div>
+          </div>
+        </div>
+        <!-- Seat Row B -->
+        <div class="row">
+          <div class="seat-group">
+            <div data-seat="B1" class="seat"></div>
+            <div data-seat="B2" class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="B3" class="seat"></div>
+            <div data-seat="B4" class="seat"></div>
+            <div data-seat="B5" class="seat"></div>
+            <div data-seat="B6" class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="B7" class="seat"></div>
+            <div data-seat="B8" class="seat"></div>
+          </div>
+        </div> 
+        <!-- Seat Row C -->
+        <div class="row">
+          <div class="seat-group">
+            <div data-seat="C1" class="seat"></div>
+            <div data-seat="C2" class="seat"></div>
+            <div data-seat="C3" class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="C4" class="seat"></div>
+            <div data-seat="C5" class="seat"></div>
+            <div data-seat="C6" class="seat"></div>
+            <div data-seat="C7" class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="C8" class="seat"></div>
+            <div data-seat="C9" class="seat"></div>
+            <div data-seat="C10" class="seat"></div>
+          </div>
+        </div>
+        <!-- Seat Row D -->
+        <div class="row">
+          <div class="seat-group">
+            <div data-seat="D1" class="seat"></div>
+            <div data-seat="D2" class="seat"></div>
+            <div data-seat="D3" class="seat"></div>
+            <div data-seat="D4" class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="D5" class="seat"></div>
+            <div data-seat="D6" class="seat"></div>
+            <div data-seat="D7" class="seat"></div>
+            <div data-seat="D8" class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="D9" class="seat"></div>
+            <div data-seat="D10" class="seat"></div>
+            <div data-seat="D11" class="seat"></div>
+            <div data-seat="D12" class="seat"></div>
+          </div>
+        </div> 
+        <!-- Seat Row E -->
+        <div class="row">
+          <div class="seat-group">
+            <div data-seat="E1" class="seat"></div>
+            <div data-seat="E2" class="seat"></div>
+            <div data-seat="E3" class="seat"></div>
+            <div data-seat="E4" class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="E5" class="seat"></div>
+            <div data-seat="E6" class="seat"></div>
+            <div data-seat="E7" class="seat"></div>
+            <div data-seat="E8" class="seat"></div>
+          </div>
+          <div class="seat-group">
+            <div data-seat="E9" class="seat"></div>
+            <div data-seat="E10" class="seat"></div>
+            <div data-seat="E11" class="seat"></div>
+            <div data-seat="E12" class="seat"></div>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <!-- Checkout -->
+    <div class="checkout">
+      <button class="checkout-btn">
+        Checkout
+        <span class="checkout-price">30$</span>
+      </button>
+    </div>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
