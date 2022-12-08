@@ -127,6 +127,10 @@ body {
   width: 100%;
 }
 
+.seat-checkbox:disabled {
+  cursor: not-allowed;
+}
+
 .seat {
   background: var(--clr-seat);
   --top-border-radius: 20%;
@@ -150,6 +154,9 @@ body {
   color: var(--clr-accent);
 }
 
+.seat-checkbox:disabled + .seat {
+  background: var(--clr-taken);
+}
 
 .legend-seat {
   position: static;
@@ -157,7 +164,6 @@ body {
   height: var(--size);
   width: var(--size);
 }
-
 
 .taken {
   background: var(--clr-taken);
