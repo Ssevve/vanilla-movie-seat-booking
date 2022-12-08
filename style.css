@@ -1,14 +1,13 @@
 :root {
-  --clr-bg: rgb(19, 18, 23);
-
-  --clr-font: rgb(234, 234, 234);
+  --clr-dark: rgb(19, 18, 23);
+  --clr-light: rgb(234, 234, 234);
 
   --clr-screen: rgb(72, 72, 85);
 
-  --clr-available: rgb(157, 163, 179);
+  --clr-seat: rgb(157, 163, 179);
+  --clr-accent: rgb(240, 197, 13);
   --clr-taken: rgb(48, 46, 58);
-  --clr-selected: rgb(240, 197, 13);
-
+  
   --clr-checkout: rgb(52, 180, 121);
 }
 
@@ -22,26 +21,79 @@
 body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  background: var(--clr-bg);
-  color: var(--clr-font);
+  background: var(--clr-dark);
+  color: var(--clr-light);
 }
 
 .container {
   width: 80%;
-  max-width: 550px;
+  max-width: 450px;
   margin: 0 auto;
+  display: grid;
+  place-items: center;
+  row-gap: 3rem;
+  padding-block: 2rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.label {
+  font-size: 1rem;
+  display: grid;
+  place-items: center;
+  gap: 0.25rem;
+}
+
+.select {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+}
+
+.price {
+  color: var(--clr-accent);
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+  padding-block: 1rem;
+  border-block: 1px solid rgb(157, 163, 179, 0.3);
+  font-size: 0.875rem;
+}
+
+.legend-group {
+  display: grid;
+  place-items: center;
+  row-gap: 0.25rem;
+}
+
+.room {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  row-gap: 2rem;
 }
 
 .screen {
   background: var(--clr-screen);
-  height: 0.5rem;
+  height: 5rem;
+  width: 100%;
+  box-shadow: 0 3px 5px 2px rgba(72, 72, 85, 0.4);
 }
 
 .seat {
-  --size: 2rem;
+  --size: 1.75rem;
   height: var(--size);
   width: var(--size);
-  background: var(--clr-available);
+  background: var(--clr-seat);
 
   --top-border-radius: 0.5rem;
   border-top-left-radius: var(--top-border-radius);
@@ -53,7 +105,7 @@ body {
 }
 
 .selected {
-  background: var(--clr-selected);
+  background: var(--clr-accent);
 }
 
 .checkout-btn {

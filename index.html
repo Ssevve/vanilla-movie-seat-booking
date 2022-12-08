@@ -15,8 +15,8 @@
     <form class="form">
       <label class="label">
         Pick a movie:
-        <select class="select">
-          <option value="">--Select--</option>
+        <select class="select" value="">
+          <option value="" selected disabled>--Select--</option>
           <option value="spoilerAlert">Spoiler Alert</option>
           <option value="violentNight">Violent Night</option>
           <option value="devotion">Devotion</option>
@@ -25,21 +25,21 @@
       </label>
     </form>
 
-    <section class="movie-price">
+    <section class="ticket-price">
       <span>Ticket price:</span>
-      <span>10$</span>
-    </div>
+      <span class="price">10$</span>
+    </section>
 
     <section class="legend">
-      <div>
+      <div class="legend-group">
         <div class="seat"></div>
         <span>Available</span>
       </div>
-      <div>
+      <div class="legend-group">
         <div class="seat taken"></div>
         <span>Taken</span>
       </div>
-      <div>
+      <div class="legend-group">
         <div class="seat selected"></div>
         <span>Selected</span>
       </div>
