@@ -178,19 +178,33 @@ body {
   width: 100%;
 }
 
-.checkout-btn {
-  background: var(--clr-checkout);
-  color: inherit;
-  padding: 1rem 2rem;
+.btn {
   border-radius: 100rem;
   border: none;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.checkout-btn {
+  padding: 1em 2em;
+  color: inherit;
+  background: var(--clr-checkout);
   font-size: 1.25rem;
   letter-spacing: 0.05rem;
   word-spacing: 0.5rem;
-  transition: background 0.1s ease-in-out;
 }
 
 .checkout-btn:hover {
   background: var(--clr-checkout-hover);
+}
+
+.reset-btn {
+  padding: 0.5em 1.25em;
+  background: var(--clr-accent);
+  font-weight: 600;
+  color: var(--clr-dark);
+}
+
+.reset-btn:hover {
+  opacity: 0.8;
 }
